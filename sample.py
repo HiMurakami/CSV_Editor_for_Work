@@ -1,6 +1,10 @@
 import pandas as pd
 
-df = pd.read_csv('input.csv', header=None)
+c_range = range(2) 
+#読み込むCSVの列幅は決め打ちしてあとで整形が良い気がする
+#今回は整形せず決め打ちのまま
+
+df = pd.read_csv('input.csv', header=None, names = c_range)
 print(df)       # show all column
 
 print("\nstart")
